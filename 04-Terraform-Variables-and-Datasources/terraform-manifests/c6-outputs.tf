@@ -11,3 +11,7 @@ output "instance_publicdns" {
   description = "EC2 Instance Public DNS"
   value = aws_instance.myec2vm.public_dns
 }
+
+output "ami_id" {
+  value = data.aws_ami.amzlinux2.id
+}
